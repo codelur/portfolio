@@ -16,7 +16,12 @@ const texts = {
                 "Spring MVC, Spring Boot, Tomcat, Servlets, JSP, JSON, XML, SOAP, and Restful APIs. "+
                 "Experienced with SQL Server, MySQL, and skilled in NoSQL databases such as MongoDB, Redis, and Cassandra.",
         footerinfo: "Developed by ",
-        engineer: "Software Engineer"
+        engineer: "Software Engineer",
+        resume: "You can download my resume here: ",
+        familiar: "Familiar",
+        intermediate: "Intermediate",
+        advanced: "Advanced",
+        professional : "Professional"
       
     },
     ES: {
@@ -35,7 +40,12 @@ const texts = {
                 "Experto en el diseño, creación e implementación de aplicaciones web robustas y escalables utilizando J2EE, JDBC, Spring MVC, "+
                 "Spring Boot, Tomcat, Servlets, JSP, JSON, XML, SOAP y API Restful. Experiencia con SQL Server, MySQL y bases de datos NoSQL como MongoDB, Redis y Cassandra.",
         footerinfo: "Desarrollado por ",
-        engineer: "Ingeniero Informatico"
+        engineer: "Ingeniero Informatico",
+        resume: "Puedes descargar my curriculum aqui : ",
+        familiar: "Familiar",
+        intermediate: "Medio",
+        advanced: "Avanzado",
+        professional : "Profesional"
     }
   };
 

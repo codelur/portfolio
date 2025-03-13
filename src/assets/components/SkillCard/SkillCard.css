@@ -1,0 +1,23 @@
+.skillcard{
+    padding: 0 60px;
+}
+
+.skillcard__total{
+    border: 1px solid black;
+}
+
+.skillcard__value{
+    height: 10px;
+    background-color: #CEC9C6;
+}
+
+.skillcard__total{
+    height: 10px;
+}
+
+.skillcard__text{
+    display: flex;
+    justify-content:space-between;
+    padding: 16px 0;
+}
+

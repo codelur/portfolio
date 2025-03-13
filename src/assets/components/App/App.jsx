@@ -8,6 +8,8 @@ import Header from '../Header/Header'
 import About from '../About/About'
 import Footer from '../Footer/Footer'
 import Contact from '../Contact/Contact'
+import Skills from '../Skills/Skills'
+import Experience from '../Experience/Experience'
 
 import LanguageContext from '../../../contexts/languageContext'
 
@@ -46,6 +48,8 @@ function App() {
         <p className="read-the-docs">
           Click on the Vite and React logos to learn moreira
         </p>
+        <Skills/>
+        <Experience/>
         <Contact/>
         <Footer/>
       </LanguageContext.Provider>

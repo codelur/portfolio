@@ -3,8 +3,13 @@
     border-bottom: 5px solid white;
 }
 
-.contact__title{
+.title{
     font-size: 50px;
+}
+
+.contact__options{
+    display: flex;
+    justify-content: space-around;
 }
 
 .contact__links{
@@ -22,12 +27,15 @@
 }
 
 .contact__link:hover {
-    transform: scale(1.2); /* Expands by 20% */
+    transform: scale(1.2); 
   }
 
 .contact__link-option{
     height: auto;
-    width: 100px;
-    
-    
+    width: 100px;  
+}
+
+.contact__resume-download{
+    height: auto;
+    width: 20px;  
 }

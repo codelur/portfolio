@@ -1,0 +1,11 @@
+.skills{
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.skills__grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3-column layout */
+    gap: 20px;
+    padding: 20px;
+  }
