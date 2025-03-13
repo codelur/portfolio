@@ -1,0 +1,49 @@
+.header{
+    width: 100%;
+    border-bottom: 5px solid white;
+    
+}
+
+.header__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header__context{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+
+.header__context-language{
+    display: flex;
+    align-items: center;
+    border-right: 2px solid white;
+}
+
+.header__context-font{
+    display: flex;
+    align-items: center;
+}
+
+.header__label{
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.header__link{
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+
+.header__context{
+    text-transform: uppercase;
+}

@@ -1,0 +1,33 @@
+.contact{
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.contact__title{
+    font-size: 50px;
+}
+
+.contact__links{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+.contact__link{
+    cursor: pointer;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+
+}
+
+.contact__link:hover {
+    transform: scale(1.2); /* Expands by 20% */
+  }
+
+.contact__link-option{
+    height: auto;
+    width: 100px;
+    
+    
+}

@@ -1,0 +1,32 @@
+.about{
+    background-image: url(../../about.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 5px solid white;
+}
+
+.about__developer{
+    background-image: url(../../me.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 345px;
+    border-radius: 10px;
+}
+
+.about__info{
+    background-color: #CEC9C6;
+    padding: 20px;
+    height: fit-content;
+    width: 400px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 10px solid white;
+
+}
