@@ -21,7 +21,6 @@
 
 .contact__link{
     cursor: pointer;
-    object-fit: contain;
     transition: transform 0.3s ease;
 
 }
@@ -38,4 +37,8 @@
 .contact__resume-download{
     height: auto;
     width: 20px;  
+}
+
+.contact__resume-download{
+    cursor: pointer;
 }

@@ -27,7 +27,7 @@ function Contact (){
                 </div>
                 <div className="contact__resume">
                     <div className="contact__resume-info">{texts[language].resume} 
-                        <a className="contact__link" href="../../../../public/resume.pdf" download="resume.pdf" >
+                        <a className="contact__link click" href="../../../../public/resume.pdf" download="resume.pdf" >
                             <img src={pdf} alt="Resume" className="contact__resume-download" />
                         </a>
                     </div>
