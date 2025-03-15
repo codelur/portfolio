@@ -18,11 +18,11 @@ function SkillCard({skill, value}){
     return (
         <div className="skillcard">
             <div className="skillcard__text">
-                <span className="skillcard__title">{skill}: </span>
+                <span className="skillcard__title">{skill} </span>
                 <span className="skillcard__description"> {description}</span>
             </div>
             <div className="skillcard__total">
-            <div className="skillcard__value" style={{ width: `${value}%` }}>
+                <div className="skillcard__value" style={{ width: `${value}%` }}>
             </div>
             </div>
 

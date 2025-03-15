@@ -13,7 +13,7 @@ const data = [
                 description: " Enhanced API security by implementing JWT-based authorization, improving system security."}
         ]
     },
-    { company: "Full Stack Engineer", position: "AMCS Group ",
+    { company: "AMCS Group", position: "Full Stack Engineer",
         details:[{title: "AWS / Docker",
                 description: ":Participated in the design of a cloud-based SaaS platform for utilities management hosted on AWS "+
                     "leveraging Docker containerization for optimal performance, supporting millions of users."},

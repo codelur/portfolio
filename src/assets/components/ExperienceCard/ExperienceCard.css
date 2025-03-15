@@ -1,0 +1,52 @@
+.experiencecard{
+    margin: 20px 20%;
+    position: relative;
+    border: 2px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+.experiencecard:hover{
+    filter: drop-shadow(10px 10px 1em #646cffaa);
+}
+
+
+.experiencecard__position{
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.experiencecard__title:hover  .experiencecard__position{
+    
+}
+
+.experiencecard__title:hover .experiencecard__text{
+    
+}
+
+
+.experiencecard__position-text{
+    text-transform: uppercase;
+}
+
+.experiencecard__position-text{
+   margin: 5px;
+    font-weight: bold;
+}
+
+
+.experiencecard__text{
+    padding: 16px;
+}
+
+ul{
+    text-align: justify;
+}
+
+.experiencecard__title{
+    text-transform: uppercase;
+}

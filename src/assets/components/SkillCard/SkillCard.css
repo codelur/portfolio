@@ -2,17 +2,26 @@
     padding: 0 60px;
 }
 
+
 .skillcard__total{
     border: 1px solid black;
 }
 
 .skillcard__value{
-    height: 10px;
+    height: 15px;
     background-color: #CEC9C6;
 }
 
+.skillcard:hover .skillcard__text{
+    color:  rgb(105, 190, 240)
+}
+
+.skillcard:hover .skillcard__value{
+    background-color: rgb(105, 190, 240);
+}
+
 .skillcard__total{
-    height: 10px;
+    height: 15px;
 }
 
 .skillcard__text{
