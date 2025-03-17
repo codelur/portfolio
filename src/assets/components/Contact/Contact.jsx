@@ -16,6 +16,7 @@ function Contact (){
     return (
         <div className="contact" id="contact">
             <div className="contact__title title">{texts[language].contact}</div>
+            <hr className="split"></hr>
             <div className="contact__options">
                 <div className="contact__social">
                     <div className="contact__social-info">{texts[language].contactinfo}

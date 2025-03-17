@@ -17,7 +17,9 @@ const data = [
     { name: "Agile", value: "80" },
     { name: "Architecture Design", value: "70" },
     { name: "Golang", value: "50" },
-    { name: "Vue.js", value: "50" }
+    { name: "Vue.js", value: "50" },
+    { name: "GraphQL", value: "20" },
+    { name: "TypeScript", value: "20" }
   ];
 
   export default data;

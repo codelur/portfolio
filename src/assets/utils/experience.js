@@ -24,7 +24,7 @@ const data = [
                 description: "Modernized secure bill payment processing by integrating APIs, simplifying accounting "+
                     "workflows, and enabling real-time payment tracking and reporting (Spring, HTML5, CSS, JavaScript)."},
             {   title: "Agile",
-                description: ": Led Java-based projects, ensuring exceptional code quality through strong leadership, comprehensive code "+
+                description: "Led Java-based projects, ensuring exceptional code quality through strong leadership, comprehensive code "+
                     "reviews, and optimized workflows (CI/CD, Jira)."},
             {   title: "Database",
                 description: "Halved content search time by developing efficient data processing scripts, improving database query "+

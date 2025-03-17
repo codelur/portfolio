@@ -28,7 +28,7 @@ const texts = {
         about: "Acerca",
         skills: "Tecnologias",
         experience: "Experiencia",
-        projects: "Projectos",
+        projects: "Proyectos",
         contact: "Contactar",
         contactinfo: "Me puedes enviar un email a codelur@gmail.com o en uno de mis perfiles: ",
         english: "Ingles",

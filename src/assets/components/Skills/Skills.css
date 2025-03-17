@@ -1,6 +1,13 @@
 .skills{
-    border-top: 5px solid white;
+    padding-bottom: 30px;
     border-bottom: 5px solid white;
+    font-weight: bold;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(180, 180, 180, 0), rgba(180, 180, 180, 0.75), rgba(180, 180, 180, 0));
 }
 
 .skills__grid-container {
@@ -16,6 +23,16 @@
     color: black;
     padding: 5px 0;
   }
+
+  .skills__logo{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.skills__logo:hover {
+    transform: scale(2); 
+  }
+
 
   .skills__icons{
     display: flex;

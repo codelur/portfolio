@@ -1,10 +1,13 @@
 .contact{
     border-top: 5px solid white;
     border-bottom: 5px solid white;
+    
 }
 
 .title{
     font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .contact__options{

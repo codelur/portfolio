@@ -10,6 +10,11 @@
 .skillcard__value{
     height: 15px;
     background-color: #CEC9C6;
+    box-shadow: 0px 0px 5px 0px #000 inset;
+}
+
+.skillcard__text{
+    transition: color 0.5s ease-in;
 }
 
 .skillcard:hover .skillcard__text{
@@ -22,6 +27,8 @@
 
 .skillcard__total{
     height: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #000 inset;
 }
 
 .skillcard__text{

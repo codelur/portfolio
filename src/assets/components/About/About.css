@@ -2,13 +2,23 @@
     background-image: url(../../about.jpeg);
     background-size: cover;
     background-position: center;
-    width: 100%;
+    justify-self: center;
+    margin-top: 40px;;
+    width: 95%;
     min-height: 700px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     border-bottom: 5px solid white;
+    gap: 100px;
+    transition: gap 2s ease-out;
+    margin-top: 100px;
+    
+}
+
+.about:hover {
+    gap: 500px;
 }
 
 .about__developer{

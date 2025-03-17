@@ -1,9 +1,35 @@
 import "./ExperienceCard.css"
 
+import { useEffect, useRef } from "react";
+
 function ExperienceCard ({company,position, details}){
 
+    const elementsRef = useRef([]);
+
+    useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } else {
+            // Remove 'show' class when the element is out of the viewport
+            entry.target.classList.remove("show");
+          }
+        });
+      },
+      { threshold: 0.6 } // Trigger when 20% of the div is visible
+    );
+
+    elementsRef.current.forEach((el) => {
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect(); // Cleanup observer on unmount
+  }, []);
+
     return(
-        <div className="experiencecard">
+        <div ref={(el) => elementsRef.current.push(el)} className="experiencecard hidden">
             <div className="experiencecard__title">
             
                 <div className="experiencecard__position">

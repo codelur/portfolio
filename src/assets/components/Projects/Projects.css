@@ -1,0 +1,8 @@
+.projects__grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3-column layout */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;  /* Centers items horizontally */
+    align-items: center;
+  }

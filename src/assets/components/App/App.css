@@ -1,8 +1,9 @@
 #root {
-  
   margin: 0 auto;
   text-align: center;
-  width: 100%;
+  background-color: antiquewhite;
+  --tw-text-opacity: 1;
+  color: rgb(0 51 89/var(--tw-text-opacity));
 }
 
 .logo {
@@ -16,11 +17,6 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-.page{
-  height: 100%;
-  
 }
 
 @keyframes logo-spin {
