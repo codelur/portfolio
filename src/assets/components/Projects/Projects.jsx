@@ -16,7 +16,7 @@ function Projects(){
             <hr className="split"></hr>
             <div className="projects__grid-container">
                 {projects.map((item, index) => (
-                    <ProjectsCard key={index} title={item.title} url={item.url} description={item.description} />
+                    <ProjectsCard key={index} title={item.title} url={item.url} description={item.description} image={item.image}/>
                 ))}
             </div>
         </div>

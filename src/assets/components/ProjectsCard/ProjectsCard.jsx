@@ -1,10 +1,19 @@
 import "./ProjectsCard.css"
 
-function ProjectsCard({title, url, description}){
+function ProjectsCard({title, url, description, image}){
     return(
         <div className="projectscard">
-            <div className="projectscard__title">
-                <h3>{title}</h3>
+            <div className="projectscard__title"
+            style={{ 
+                backgroundImage:  `url(${image})`, 
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                color: "white",
+                padding: "20px",
+                minHeight: "150px"
+            }}>
+                
                 
             </div>
             <div className="projectscard__link">

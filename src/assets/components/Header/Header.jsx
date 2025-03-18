@@ -23,7 +23,7 @@ function Header({handleLanguage}){
                 </div>
                 <div className="header__context">
                     <div className="header__context-language">
-                        {texts[language].language} :
+                        {texts[language].language} 
                         <label htmlFor="" className="header__label" onClick={() => handleLanguage("EN")}>
                             <img src={english} alt="Spanish" className="header__language-option" />
                         </label>
@@ -32,7 +32,7 @@ function Header({handleLanguage}){
                         </label>
                     </div>
                     <div className="header__context-font">
-                    <label htmlFor="" className="header__label">
+                        <label htmlFor="" className="header__label">
                             Arial
                         </label>
                         <label htmlFor="" className="header__label">
