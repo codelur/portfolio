@@ -1,10 +1,10 @@
 import "./SkillCard.css"
 
-import React from "react";
+import React, { memo } from "react";
 import texts from '../../utils/texts';
 import LanguageContext from "../../../contexts/languageContext";
 
-function SkillCard({skill, value}){
+const SkillCard = memo(({skill, value}) => {
 
     const { language } = React.useContext(
         LanguageContext
@@ -28,6 +28,6 @@ function SkillCard({skill, value}){
 
         </div>
     );
-}
+});
 
 export default SkillCard;

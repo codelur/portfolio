@@ -1,8 +1,5 @@
 import { useState } from 'react'
 
-import reactLogo from '../../react.svg'
-import viteLogo from '/vite.svg'
-
 import './App.css'
 import Header from '../Header/Header'
 import About from '../About/About'
@@ -26,8 +23,7 @@ function App() {
 
   return (
     <div className="page">
-      <LanguageContext.Provider
-      value={{language}}>
+      <LanguageContext.Provider value={{language}}>
         <Header handleLanguage={handleLanguage}/>
         <About/>
         <Skills/>
