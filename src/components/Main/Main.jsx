@@ -7,7 +7,7 @@ import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import About from '../About/About';
 
-function Main ({handleLanguage}){
+function Main ({handleLanguage, handleEmailContactClick}){
     return(
         <>
             <Header handleLanguage={handleLanguage}/>
@@ -15,7 +15,7 @@ function Main ({handleLanguage}){
             <Skills/>
             <Experience/>
             <Projects/>
-            <Contact/>
+            <Contact handleEmailContactClick={handleEmailContactClick}/>
             <Footer/>
         </>
     )

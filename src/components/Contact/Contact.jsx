@@ -8,7 +8,7 @@ import github from "../../assets/github.png";
 import linkedin from "../../assets/linkedin.webp";
 import pdf from "../../assets/pdf.webp";
 
-function Contact (){
+function Contact ({handleEmailContactClick}){
     const { language } = React.useContext(
         LanguageContext
       );
@@ -18,19 +18,58 @@ function Contact (){
             <div className="contact__title title">{texts[language].contact}</div>
             <hr className="split"></hr>
             <div className="contact__options">
+                {/* Social Info Section */}
+                
+                <div className="contact__social-info">
+                    <div className="contact__email">
+                        <p>{texts[language].contactinfo}</p>
+                        <button
+                        type="button"
+                        className="contact__email-contact-btn"
+                        onClick={handleEmailContactClick}
+                        >
+                        Send email
+                        </button>
+                    </div>
+
+                    
+                </div>
+                
                 <div className="contact__social">
-                    <div className="contact__social-info">{texts[language].contactinfo}
-                        <div className="contact__links">
-                            <a className="contact__link" href="https://github.com/codelur" target="_blank"><img src={github} alt="Github" className="contact__link-option" /></a>
-                            <a className="contact__link" href="https://www.linkedin.com/in/salvador-sadri/" target="_blank"><img src={linkedin} alt="LinkedIn" className="contact__link-option" /></a>                
+                    {/* Social Links */}
+                    <div className="contact__links">
+                        <p>{texts[language].contactsocials}</p>
+                        <div className="contact__links-container">
+                            <a
+                                className="contact__link"
+                                href="https://github.com/codelur"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img src={github} alt="Github" className="contact__link-option" />
+                            </a>
+                            <a
+                                className="contact__link"
+                                href="https://www.linkedin.com/in/salvador-sadri/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img src={linkedin} alt="LinkedIn" className="contact__link-option" />
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div className="contact__resume">
-                    <div className="contact__resume-info">{texts[language].resume} 
-                        <a className="contact__link click" href="../../../../public/resume.pdf" download="resume.pdf" >
-                            <img src={pdf} alt="Resume" className="contact__resume-download" />
-                        </a>
+                    {/* Resume Section */}
+                    <div className="contact__resume">
+                        <div className="contact__resume-info">
+                            <p>{texts[language].resume}</p>
+                            <a
+                                className="contact__link click"
+                                href="/resume.pdf"
+                                download="resume.pdf"
+                            >
+                                <img src={pdf} alt="Resume" className="contact__resume-download" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

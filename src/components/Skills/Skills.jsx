@@ -19,16 +19,16 @@ function Skills(){
             <hr className="split"></hr>
             <div className="skills__tools">
                 <p align="center" className="skills__icons">
-                    {skillIcons.map((skill) => (
-                        <a key={skill.id} href={skill.url} target="_blank" rel="noreferrer">
+                    {skillIcons.map((skill, index) => (
+                        <a key={index} href={skill.url} target="_blank" rel="noreferrer">
                             <img className="skills__logo" src={skill.src} alt={skill.name} width="40" height="40" />
                         </a>
                     ))}
                 </p>
             </div> 
             <div className="skills__grid-container">
-                {skills.map((item, index) => (
-                    <React.Fragment key={index}>
+                {skills.map((item) => (
+                    <React.Fragment key={item.id}>
                         <SkillCard skill={item.name} value={item.value} />
                     </React.Fragment>
                 ))}
