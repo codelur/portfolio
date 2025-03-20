@@ -31,14 +31,6 @@ function Header({handleLanguage}){
                             <img src={spanish} alt="Spanish" className="header__language-option" />
                         </label>
                     </div>
-                    <div className="header__context-font">
-                        <label htmlFor="" className="header__label">
-                            Arial
-                        </label>
-                        <label htmlFor="" className="header__label">
-                            Calibri
-                        </label>
-                    </div>
                 </div>
 
             </div>
