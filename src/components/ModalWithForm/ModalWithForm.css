@@ -1,0 +1,167 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #0000004d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+  }
+  
+  .modal_opened {
+    visibility: visible;
+  }
+  
+  .modal__content {
+    background-color: white;
+    position: relative;
+    padding: 28px 28px 36px 28px;
+    border-radius: 20px;
+    max-width: 496px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .modal__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .modal__title {
+    font-family: cabinetgrotesk, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  
+  .modal__close {
+    background-image: url("../../assets/Union.svg");
+    background-color: transparent;
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+    right: 28px;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .modal__confirm {
+    cursor: pointer;
+  }
+  
+  .modal__label {
+    font-family: cabinetgrotesk, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .modal__error {
+    color: red;
+  }
+  
+  .modal__input {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    padding-bottom: 4px;
+  }
+  
+  .modal__radio-buttons {
+    border: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+  
+  .modal__legend {
+    font-family: cabinetgrotesk, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .modal__label_type_radio {
+    display: flex;
+    gap: 8px;
+    color: gray;
+    margin-bottom: 8px;
+  }
+  
+  .modal__input_type_radio:checked {
+    accent-color: black;
+  }
+  
+  .modal__label_type_radio:has(.modal__input_type_radio:checked) {
+    color: black;
+  }
+  
+  .modal__buttons{
+    display: flex;
+    gap: 12px;
+  }
+  
+  .modal__submit {
+    font-family: cabinetgrotesk, sans-serif;
+    background-color: #000000;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 0;
+    width: 132px;
+    height: 36px;
+    cursor: pointer;
+  }
+  
+  .modal__alt{
+    font-family: cabinetgrotesk, sans-serif;
+    color: gray;
+    border: 0;
+    background-color: white;
+    font-size: 16px;
+    line-height: 20px;
+  
+  }
+  
+  .modal__alt:hover{
+    color: black;
+  }
+  
+  .modal__submit:hover {
+    background-color: #00000099;
+  }
+  
+  .modal__submit:disabled {
+    background-color: #0000004d;
+  }
+  
+  .modal__error {
+    font-family: cabinetgrotesk, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  @media screen and (max-width: 375px) {
+    .modal__add-garment {
+      align-self: end;
+    }
+    .modal__submit {
+      width: 100%;
+    }
+  }
+  

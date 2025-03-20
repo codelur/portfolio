@@ -2,11 +2,11 @@ import "./Contact.css";
 
 import React from "react";
 import texts from '../../utils/texts';
-import LanguageContext from "../../../contexts/languageContext";
+import LanguageContext from "../../contexts/languageContext";
 
-import github from "../../github.png";
-import linkedin from "../../linkedin.webp";
-import pdf from "../../pdf.webp";
+import github from "../../assets/github.png";
+import linkedin from "../../assets/linkedin.webp";
+import pdf from "../../assets/pdf.webp";
 
 function Contact (){
     const { language } = React.useContext(

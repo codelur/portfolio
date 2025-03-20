@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css"
 import texts from '../../utils/texts';
 
-import LanguageContext from "../../../contexts/languageContext";
+import LanguageContext from "../../contexts/languageContext";
 
 function About(){
     const { language } = React.useContext(

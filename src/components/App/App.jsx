@@ -4,7 +4,7 @@ import './App.css'
 import Skills from '../Skills/Skills'
 import Main from '../Main/Main';
 
-import LanguageContext from '../../../contexts/languageContext'
+import LanguageContext from '../../contexts/languageContext'
 
 
 function App() {

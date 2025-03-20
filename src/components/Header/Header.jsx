@@ -3,9 +3,9 @@ import React from "react";
 
 import texts from '../../utils/texts';
 
-import LanguageContext from "../../../contexts/languageContext";
-import spanish from "../../spanish.png";
-import english from "../../usa.jpg";
+import LanguageContext from "../../contexts/languageContext";
+import spanish from "../../assets/spanish.png";
+import english from "../../assets/usa.jpg";
 
 function Header({handleLanguage}){
     const { language } = React.useContext(

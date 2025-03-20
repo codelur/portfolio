@@ -2,7 +2,7 @@ import "./SkillCard.css"
 
 import React, { memo } from "react";
 import texts from '../../utils/texts';
-import LanguageContext from "../../../contexts/languageContext";
+import LanguageContext from "../../contexts/languageContext";
 
 const SkillCard = memo(({skill, value}) => {
 

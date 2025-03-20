@@ -1,5 +1,5 @@
 .about{
-    background-image: url(../../about.jpeg);
+    background-image: url(../../assets/about.jpeg);
     background-size: cover;
     background-position: center;
     justify-self: center;
@@ -22,7 +22,7 @@
 }
 
 .about__developer{
-    background-image: url(../../me.jpg);
+    background-image: url(../../assets/me.jpg);
     background-size: cover;
     background-position: center;
     height: 500px;

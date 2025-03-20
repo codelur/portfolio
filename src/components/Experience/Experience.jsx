@@ -3,7 +3,7 @@ import "./Experience.css";
 import React from "react";
 import texts from '../../utils/texts';
 import experience from "../../utils/experience";
-import LanguageContext from "../../../contexts/languageContext";
+import LanguageContext from "../../contexts/languageContext";
 import ExperienceCard from "../ExperienceCard/ExperienceCard";
 
 function Experience(){

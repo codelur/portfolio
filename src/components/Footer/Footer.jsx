@@ -4,9 +4,9 @@ import React from "react";
 
 import texts from '../../utils/texts';
 
-import LanguageContext from "../../../contexts/languageContext";
-import github from "../../github.png";
-import linkedin from "../../linkedin.webp";
+import LanguageContext from "../../contexts/languageContext";
+import github from "../../assets/github.png";
+import linkedin from "../../assets/linkedin.webp";
 
 function Footer() {
     const { language } = React.useContext(

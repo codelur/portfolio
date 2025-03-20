@@ -2,7 +2,7 @@ import "./Skills.css";
 
 import React from "react";
 import texts from '../../utils/texts';
-import LanguageContext from "../../../contexts/languageContext";
+import LanguageContext from "../../contexts/languageContext";
 import skills from "../../utils/skills";
 import SkillCard from "../SkillCard/SkillCard";
 import skillIcons from "../../utils/skillIcons";

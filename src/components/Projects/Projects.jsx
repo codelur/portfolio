@@ -2,7 +2,7 @@ import "./Projects.css"
 
 import React from "react";
 import texts from '../../utils/texts';
-import LanguageContext from "../../../contexts/languageContext";
+import LanguageContext from "../../contexts/languageContext";
 import ProjectsCard from "../ProjectsCard/ProjectsCard";
 import projects from "../../utils/projects";
 
