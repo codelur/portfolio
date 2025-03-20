@@ -1,5 +1,5 @@
 const data = [
-    { company: "Freelance", position: "Full Stack Engineer",
+    { id: 1, company: "Freelance", position: "Full Stack Engineer",
         details:[{title: "UI / UX",
                 description: " Developed a budgeting tool for financial operations, offering personalized budgeting features and seamless "+
                     "integration with user accounts, resulting in improved financial oversight (ReactJS)."},
@@ -13,7 +13,7 @@ const data = [
                 description: " Enhanced API security by implementing JWT-based authorization, improving system security."}
         ]
     },
-    { company: "AMCS Group", position: "Full Stack Engineer",
+    { id: 2, company: "AMCS Group", position: "Full Stack Engineer",
         details:[{title: "AWS / Docker",
                 description: ":Participated in the design of a cloud-based SaaS platform for utilities management hosted on AWS "+
                     "leveraging Docker containerization for optimal performance, supporting millions of users."},
@@ -38,7 +38,7 @@ const data = [
                     
         ]
     },
-    { company: "CIU Cal International University ", position: "Android Developer",
+    { id: 3, company: "CIU Cal International University ", position: "Android Developer",
         details:[{title: "Android Studio",
                 description: "Led the development of smart tools for a student app, including scheduling, a message board, and "+
                     "real-time notifications, significantly enhancing the student experience."},
@@ -46,7 +46,7 @@ const data = [
                 description: "Streamlined API functionality increasing user engagement through personalized content delivery."}
         ]
     },
-    { company: "Sun West Mortgage Inc", position: "Software Developer",
+    { id: 4, company: "Sun West Mortgage Inc", position: "Software Developer",
         details:[{title: "Automation",
                 description: "Reduced mortgage processing by 30% by automating the application process through API optimization "+
                     "and efficient database query implementation (Java, JSP, CSS, HTML, SQL Server)."},
@@ -55,7 +55,7 @@ const data = [
                     "content generation, incorporating background downloading for large reports with completion notifications."}
         ]
     },
-    { company: "", position: "",
+    { id: 5, company: "", position: "",
         details:[{title: "",
                 description: ""},
             {   title: "",

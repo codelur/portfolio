@@ -19,8 +19,8 @@ function Experience(){
             <hr className="split"></hr>
             {experience
                 .filter((item) => item.company.trim() !== "")
-                .map((item, index) => (
-                    <ExperienceCard key={index} company={item.company} 
+                .map((item) => (
+                    <ExperienceCard key={item.id} company={item.company} 
                     position={item.position}
                     details={item.details} />
                 ))}

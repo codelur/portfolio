@@ -1,13 +1,8 @@
 import { useState } from 'react'
-
+import { Routes, Route } from "react-router-dom";
 import './App.css'
-import Header from '../Header/Header'
-import About from '../About/About'
-import Footer from '../Footer/Footer'
-import Contact from '../Contact/Contact'
 import Skills from '../Skills/Skills'
-import Experience from '../Experience/Experience'
-import Projects from '../Projects/Projects'
+import Main from '../Main/Main';
 
 import LanguageContext from '../../../contexts/languageContext'
 
@@ -24,13 +19,23 @@ function App() {
   return (
     <div className="page">
       <LanguageContext.Provider value={{language}}>
-        <Header handleLanguage={handleLanguage}/>
-        <About/>
-        <Skills/>
-        <Experience/>
-        <Projects/>
-        <Contact/>
-        <Footer/>
+        
+        
+        <Routes>
+          <Route
+              path="/"
+              element={<Main handleLanguage={handleLanguage}/>}
+          >
+          </Route>
+          <Route
+            path="/react"
+            element={
+              <Skills/>
+            }
+          >
+          </Route>      
+        </Routes>
+        
       </LanguageContext.Provider>
     </div>
   )
