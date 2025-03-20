@@ -1,0 +1,65 @@
+.switch {
+    display: flex;
+    position: relative;
+    width: 66px;
+    height: 28px;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .switch__box {
+    border-radius: 25px;
+    border: 2px solid white;
+    width: 66px;
+    height: 28px;
+    appearance: none;
+  }
+  
+  .switch__slider {
+    border-radius: 20px;
+    width: 30px;
+    height: 28px;
+    background-color: black;
+    color: white;
+    background-color: black;
+    text-align: center;
+    position: absolute;
+    transition: left 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+  }
+  
+  .switch__slider-dark {
+    left: 33px;
+    background-color: black;
+  }
+  
+  .switch__slider-light {
+    left: 4px;
+    background-color: white;
+  }
+  
+  .switch__temp-dark {
+    position: absolute;
+    text-align: center;
+    right: 10px;
+    
+  }
+  .switch__temp-light {
+    position: absolute;
+    text-align: center;
+    left: 12px;
+  }
+  
+  p {
+    transition: color 1s ease-in-out;
+  }
+  
+  .switch__active {
+    color: white;
+    
+  }
+  
+  .switch__inactive {
+    color: black;
+  }
+  

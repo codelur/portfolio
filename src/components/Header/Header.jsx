@@ -6,8 +6,9 @@ import texts from '../../utils/texts';
 import LanguageContext from "../../contexts/languageContext";
 import spanish from "../../assets/spanish.png";
 import english from "../../assets/usa.jpg";
+import ThemeToggle from "../ThemeToggle/Themetoggle";
 
-function Header({handleLanguage}){
+function Header({handleLanguage, changeTheme}){
     const { language } = React.useContext(
         LanguageContext
       );
@@ -31,7 +32,10 @@ function Header({handleLanguage}){
                             <img src={spanish} alt="Spanish" className="header__language-option" />
                         </label>
                     </div>
+                    
+                    <ThemeToggle changeTheme={changeTheme} />
                 </div>
+                
 
             </div>
 

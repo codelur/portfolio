@@ -13,7 +13,7 @@
     border-bottom: 5px solid white;
     gap: 100px;
     transition: gap 2s ease-out;
-    margin-top: 100px;
+    margin-top: 50px;
     
 }
 
@@ -31,7 +31,8 @@
 }
 
 .about__info{
-    background-color: #CEC9C6;
+    background-color: antiquewhite;
+    color: rgb(0 51 89/var(--tw-text-opacity));;
     padding: 20px;
     height: fit-content;
     width: 400px;

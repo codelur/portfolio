@@ -5,11 +5,13 @@ import Skills from '../Skills/Skills'
 import Main from '../Main/Main';
 import EmailContactForm from '../EmailContactForm/EmailContactForm';
 
+import { Provider } from "react-redux";
+import store from "../../app/store";
+
 import LanguageContext from '../../contexts/languageContext'
 
 
 function App() {
-
   const [language, setLanguage] = useState("EN");
   const handleLanguage = (language) => {
     setLanguage(language);
@@ -60,9 +62,12 @@ function App() {
         <Routes>
           <Route
               path="/"
-              element={<Main handleLanguage={handleLanguage}
+              element={<Provider store={store}>
+                      <Main handleLanguage={handleLanguage}
                               handleEmailContactClick={handleEmailContactClick}
-              />}
+                      />
+                      </Provider>
+                      }
           >
           </Route>
           <Route

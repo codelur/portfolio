@@ -7,17 +7,28 @@ import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import About from '../About/About';
 
+import { toggleTheme } from "../../features/themeSlice";
+import { useDispatch, useSelector } from "react-redux";
+
 function Main ({handleLanguage, handleEmailContactClick}){
+
+    const dispatch = useDispatch();
+    const theme = useSelector((state) => state.theme.theme);
+
+    const changeTheme = () => {
+        dispatch(toggleTheme());
+      }
+
     return(
-        <>
-            <Header handleLanguage={handleLanguage}/>
+        <div className={`main__${theme}`}>
+            <Header handleLanguage={handleLanguage} changeTheme={changeTheme}/>
             <About/>
             <Skills/>
             <Experience/>
             <Projects/>
             <Contact handleEmailContactClick={handleEmailContactClick}/>
             <Footer/>
-        </>
+        </div>
     )
 }
 
