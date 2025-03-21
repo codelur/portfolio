@@ -20,7 +20,7 @@ function Main ({handleLanguage, handleEmailContactClick}){
       }
 
     return(
-        <div className={`main__${theme}`}>
+        <div className={`main main__${theme}`}>
             <Header handleLanguage={handleLanguage} changeTheme={changeTheme}/>
             <About/>
             <Skills/>

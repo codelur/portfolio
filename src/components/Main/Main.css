@@ -1,3 +1,7 @@
+.main {
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
 .main__light{
     background-color: antiquewhite;
     color: rgb(0 51 89/var(--tw-text-opacity));

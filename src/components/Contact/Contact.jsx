@@ -8,10 +8,15 @@ import github from "../../assets/github.png";
 import linkedin from "../../assets/linkedin.webp";
 import pdf from "../../assets/pdf.webp";
 
+import { useSelector } from "react-redux";
+
 function Contact ({handleEmailContactClick}){
+    const theme = useSelector((state) => state.theme.theme);
     const { language } = React.useContext(
         LanguageContext
       );
+    
+    
 
     return (
         <div className="contact" id="contact">
@@ -25,7 +30,7 @@ function Contact ({handleEmailContactClick}){
                         <p>{texts[language].contactinfo}</p>
                         <button
                         type="button"
-                        className="contact__email-contact-btn"
+                        className={`contact__email-contact-btn ${theme}`}
                         onClick={handleEmailContactClick}
                         >
                         Send email

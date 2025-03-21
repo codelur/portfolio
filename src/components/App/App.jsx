@@ -80,7 +80,6 @@ function App() {
         </Routes>
         <EmailContactForm closeModal={closeModal} 
                 isOpen={activeModal === "email-contact"} 
-                handleSubmit={closeModal} 
                 />
       </LanguageContext.Provider>
     </div>

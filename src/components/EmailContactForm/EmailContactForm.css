@@ -1,0 +1,39 @@
+.status-message {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 1s ease; /* Smooth fade in/out */
+    margin-top: 10px;
+  }
+  
+  /* When the message is visible */
+  .status-message.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease, visibility 0s; /* Smooth fade in */
+  }
+  
+  /* Style for the message text */
+  .status-message p {
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    color: rgb(0 51 89/var(--tw-text-opacity));
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .status-message {
+    overflow: hidden;  /* Hide the content while transitioning */
+    height: 0;
+    transition: height 1s ease;  /* Smooth transition for height */
+  }
+  
+  /* When the message is visible, expand the container */
+  .status-message.visible {
+    height: 50px;  /* Adjust this height based on your content */
+    transition: height 1s ease;  /* Smooth transition when expanding */
+  }
+
+  .email-contact__message{
+    
+  }

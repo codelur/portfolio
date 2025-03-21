@@ -23,7 +23,7 @@ const ThemeToggle = ({changeTheme}) => {
         ></span>
         <p
             className={`switch__temp-dark ${
-                theme === "dark" ?  "switch__active":"switch__inactive" 
+                theme === "dark" ?  "switch__active":"switch__active" 
             }`}
         >
             &#x263C;

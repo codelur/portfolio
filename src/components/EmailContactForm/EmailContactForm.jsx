@@ -2,8 +2,12 @@ import { useState } from "react";
 import "./EmailContactForm.css"
 
 import ModalWithForm from "../ModalWithForm/ModalWithForm"
+import { sendEmail } from "../../api/api";
 
-function EmailContactForm({closeModal, isOpen, handleSubmit}){
+function EmailContactForm({closeModal, isOpen}){
+
+    const [statusMessage, setStatusMessage] = useState("");
+    const [isVisible, setIsVisible] = useState(false);
 
     const [email, setEmail] = useState("");
     const handleEmailChange = (event) => {
@@ -20,6 +24,41 @@ function EmailContactForm({closeModal, isOpen, handleSubmit}){
         setMessage(event.target.value);
     };
 
+    // Function to hide the status message after 2 seconds
+    const showStatusMessage  = () => {
+        setIsVisible(true); 
+        setTimeout(() => {
+            setIsVisible(false); 
+            
+        }, 2000); // Hide after 2 seconds
+    };
+
+    const sendContactEmail = async (event) =>{
+        event.preventDefault();
+        if (!senderName || !email || !message) {
+            setStatusMessage("Please fill in all fields.");
+            showStatusMessage();
+            return;
+          }
+      
+          // Call the sendEmail function
+        try {  
+            const response = await sendEmail(senderName, email, message);
+            // Check the response and show the message
+            if (response.success) {
+                setStatusMessage("Email sent successfully!");
+            } else {
+                setStatusMessage(`Failed to send email: ${response.error}`);
+            }
+            
+        } catch (error) {
+            console.error("Error occurred while sending email:", error);
+            setStatusMessage("Error occurred while sending email.");
+        }finally{
+            showStatusMessage();
+        }
+    }
+
     return(
         <ModalWithForm
             title="Send Email"
@@ -27,10 +66,15 @@ function EmailContactForm({closeModal, isOpen, handleSubmit}){
             closeModal={closeModal}
             name="email-contact"
             isOpen={isOpen}
-            onSubmit={handleSubmit}
+            onSubmit={sendContactEmail}
             altButtonText={""}
             modal={"email-contact"}
             >
+                {statusMessage && 
+                    <div className={`status-message ${isVisible ? "visible" : "hidden"}`}>
+                        <p className="email-contact__message">{statusMessage}</p>
+                    </div>
+                    }
                 <label htmlFor="email" className="modal__label">
                     Email
                     <input
@@ -70,7 +114,7 @@ function EmailContactForm({closeModal, isOpen, handleSubmit}){
                         rows="2"
                         />
                 </label>
-
+                
         </ModalWithForm>
     )
 }
