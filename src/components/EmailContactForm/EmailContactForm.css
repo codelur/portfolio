@@ -33,7 +33,3 @@
     height: 50px;  /* Adjust this height based on your content */
     transition: height 1s ease;  /* Smooth transition when expanding */
   }
-
-  .email-contact__message{
-    
-  }

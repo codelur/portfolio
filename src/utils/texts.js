@@ -13,7 +13,7 @@ const texts = {
         myinfo: "Experienced Software Developer specializing in Object-Oriented Programming, "+
                 "Data Structures, Algorithms, Collections, Stream API, exception handling, and JUnit in Java. "+
                 "Proficient Full Stack Developer using Eclipse, NetBeans, and Visual Studio within Agile DevOps teams, following Agile Methodology."+
-                "Skilled in designing, creating, and deploying robust, scalable web applications using J2EE, JDBC, "+
+                "Skilled in designing, creating, and deploying robust, scalable web applications using ReactJS, J2EE, JDBC, "+
                 "Spring MVC, Spring Boot, Tomcat, Servlets, JSP, JSON, XML, SOAP, and Restful APIs. "+
                 "Experienced with SQL Server, MySQL, and skilled in NoSQL databases such as MongoDB, Redis, and Cassandra.",
         footerinfo: "Developed by ",
@@ -22,7 +22,8 @@ const texts = {
         familiar: "Familiar",
         intermediate: "Intermediate",
         advanced: "Advanced",
-        professional : "Professional"
+        professional : "Professional",
+        findme: "Find me online"
       
     },
     ES: {
@@ -37,9 +38,9 @@ const texts = {
         spanish: "Español",
         language: "Idioma",
         myinfo: "Desarrollador de software experimentado especializado en programación orientada a objetos, "+
-                "estructuras de datos, algoritmos, colecciones, API de flujo, manejo de excepciones y JUnit en Java. "+
+                "estructuras de datos, algoritmos, colecciones, Stream API, manejo de excepciones y JUnit en Java. "+
                 "Desarrollador full stack competente con Eclipse, NetBeans y Visual Studio en equipos Agile DevOps, siguiendo la metodología Agile. "+
-                "Experto en el diseño, creación e implementación de aplicaciones web robustas y escalables utilizando J2EE, JDBC, Spring MVC, "+
+                "Experto en el diseño, creación e implementación de aplicaciones web robustas y escalables utilizando ReactJS, J2EE, JDBC, Spring MVC, "+
                 "Spring Boot, Tomcat, Servlets, JSP, JSON, XML, SOAP y API Restful. Experiencia con SQL Server, MySQL y bases de datos NoSQL como MongoDB, Redis y Cassandra.",
         footerinfo: "Desarrollado por ",
         engineer: "Ingeniero Informatico",
@@ -47,7 +48,8 @@ const texts = {
         familiar: "Familiar",
         intermediate: "Medio",
         advanced: "Avanzado",
-        professional : "Profesional"
+        professional : "Profesional",
+        findme: "Buscame en"
     }
   };
 

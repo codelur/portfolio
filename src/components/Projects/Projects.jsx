@@ -15,7 +15,7 @@ function Projects(){
             <div className="projects__title title">{texts[language].projects}</div>
             <hr className="split"></hr>
             <div className="projects__grid-container">
-                {projects.map((item) => (
+                {projects[language].map((item) => (
                     <ProjectsCard key={item.id} title={item.title} url={item.url} description={item.description} image={item.image}/>
                 ))}
             </div>

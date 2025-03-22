@@ -18,7 +18,7 @@
 }
 
 .about:hover {
-    gap: 400px;
+    gap: 20vw;
 }
 
 .about__developer{
@@ -41,3 +41,18 @@
     border: 10px solid white;
 
 }
+
+.about__info-text{
+    text-align: justify;
+}
+
+@media screen and (max-width: 500px) {
+    .about{
+        gap: 20px;
+    }
+    .about:hover {
+        gap: 20px;
+    }
+    
+}
+

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://my-node-server-625361629214.us-central1.run.app';
+const API_URL = 'https://my-node-server-app-625361629214.us-central1.run.app';
 
 export const sendEmail = async (name, email, message) => {
     try {

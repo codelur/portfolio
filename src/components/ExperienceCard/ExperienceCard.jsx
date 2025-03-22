@@ -37,14 +37,14 @@ function ExperienceCard ({company,position, details}){
                         {position}
                     </p>
                 </div>
-                {company}
+                <span className="experiencecard__company-text">{company}</span>
                 <div className="experiencecard__text">
                     <ul>
                     {details
                         
                         .map((item, index) => (
                         <li key ={index}>
-                            {item.title} : {item.description}
+                            <span className="experiencecard__text-title">{item.title}</span> : {item.description}
                         </li>
                     ))}
                     </ul>

@@ -16,7 +16,6 @@ function Header({handleLanguage, changeTheme}){
         <header className="header">
             <div className="header__menu">
                 <div className="header__nav">
-                    <a className="header__link menu-link" href="#about">{texts[language].about}</a>
                     <a className="header__link menu-link" href="#skills">{texts[language].skills}</a>
                     <a className="header__link menu-link" href="#experience">{texts[language].experience}</a>
                     <a className="header__link menu-link" href="#projects">{texts[language].projects}</a>

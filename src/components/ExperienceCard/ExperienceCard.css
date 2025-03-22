@@ -5,10 +5,12 @@
     border: 2px solid  rgb(0 51 89/var(--tw-text-opacity));
     display: flex;
     flex-direction: column;
+    transition: all 0.3s ease-in-out;
 }
 
 .experiencecard:hover{
-    filter: drop-shadow(10px 10px 1em #646cffaa);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    
 }
 
 
@@ -18,6 +20,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+
+.experiencecard__text-title{
+    font-weight: bold;
+    text-decoration: underline;
     
 }
 
@@ -44,7 +52,7 @@
 
 
 .experiencecard__text{
-    padding: 16px;
+    padding: 0 16px 8px 16px;
 }
 
 ul{

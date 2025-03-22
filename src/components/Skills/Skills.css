@@ -38,3 +38,11 @@ hr {
     display: flex;
     justify-content: space-evenly;
   }
+
+  @media screen and (max-width: 500px) {
+    .skills__grid-container {
+      grid-template-columns: repeat(2, 1fr); /* 3-column layout */
+      gap: 20px;
+      padding: 20px;
+    }
+}

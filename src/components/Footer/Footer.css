@@ -51,3 +51,7 @@
     height: auto;
     width: 50px;  
 }
+
+.footer__follow_text{
+    text-transform: uppercase;
+}

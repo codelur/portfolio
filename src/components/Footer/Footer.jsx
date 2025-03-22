@@ -25,7 +25,7 @@ function Footer() {
         <p className="footer__developer">© {new Date().getFullYear()} Salvador Sanchez, {texts[language].engineer}</p>
       </div>
       <div className="footer__follow">
-        <p>FIND ME ONLINE</p>
+        <p className="footer__follow_text">{texts[language].findme}</p>
         <div className="footer__links">
             <a className="footer__social" href="https://github.com/codelur" target="_blank"><img src={github} alt="Github" className="footer__link-option" /></a>
             <a className="footer__social" href="https://www.linkedin.com/in/salvador-sadri/" target="_blank"><img src={linkedin} alt="LinkedIn" className="footer__link-option" /></a>                

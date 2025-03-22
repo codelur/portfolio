@@ -10,14 +10,13 @@ function ProjectsCard({title, url, description, image}){
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 color: "white",
-                padding: "20px",
-                minHeight: "150px"
+                padding: "20px"
             }}>
                 
                 
             </div>
             <div className="projectscard__link">
-                <p>{description}</p>
+                <p className="projectscard__description">{description}</p>
                 <a href={url} target="_blank">{title}</a>
             </div>
         </div>

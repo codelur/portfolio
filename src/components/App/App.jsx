@@ -8,10 +8,10 @@ import EmailContactForm from '../EmailContactForm/EmailContactForm';
 import { Provider } from "react-redux";
 import store from "../../app/store";
 
-import LanguageContext from '../../contexts/languageContext'
-
+import LanguageContext from '../../contexts/languageContext';
 
 function App() {
+
   const [language, setLanguage] = useState("EN");
   const handleLanguage = (language) => {
     setLanguage(language);

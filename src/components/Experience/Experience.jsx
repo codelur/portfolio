@@ -17,7 +17,7 @@ function Experience(){
         <div className="experience" id="experience">
             <div className="experience__title title">{texts[language].experience}</div>
             <hr className="split"></hr>
-            {experience
+            {experience[language]
                 .filter((item) => item.company.trim() !== "")
                 .map((item) => (
                     <ExperienceCard key={item.id} company={item.company} 
