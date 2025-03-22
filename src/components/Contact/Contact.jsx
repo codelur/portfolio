@@ -30,7 +30,7 @@ function Contact ({handleEmailContactClick}){
                         <p>{texts[language].contactinfo}</p>
                         <button
                         type="button"
-                        className={`contact__email-contact-btn ${theme}`}
+                        className={`contact__email-contact-btn contact__email-contact-btn-${theme}`}
                         onClick={handleEmailContactClick}
                         >
                         Send email

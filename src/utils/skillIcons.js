@@ -8,7 +8,7 @@ const skillIcons = [
     { name: "CSS3", url: "https://www.w3schools.com/css/", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" },
     { name: "Docker", url: "https://www.docker.com/", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" },
     { name: "Figma", url: "https://www.figma.com/", src: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg" },
-    { name: "Git", url: "https://git-scm.com/", src: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" },
+    { name: "Github", url: "https://git-scm.com/", src: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" },
     { name: "HTML5", url: "https://www.w3.org/html/", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" },
     { name: "Java", url: "https://www.java.com", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" },
     { name: "JavaScript", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" },

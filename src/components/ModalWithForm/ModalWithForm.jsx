@@ -32,7 +32,7 @@ function ModalWithForm({
         >
           {children}
           <div className="modal__buttons">
-            <button type="submit" className="modal__submit">
+            <button type="submit" className="contact__email-contact-btn modal__submit">
             {isLoading? 'Saving...' : buttonText}
             </button>
             {altButtonText && (

@@ -17,7 +17,7 @@
     margin: 0;
     padding: 0;
     border-radius: 5px;
-    color: rgb(0 51 89/var(--tw-text-opacity));
+    color: var(--primary-color);
     text-align: center;
     font-weight: bold;
   }
@@ -33,3 +33,5 @@
     height: 50px;  /* Adjust this height based on your content */
     transition: height 1s ease;  /* Smooth transition when expanding */
   }
+  
+

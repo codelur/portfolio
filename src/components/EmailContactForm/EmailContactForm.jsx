@@ -85,6 +85,7 @@ function EmailContactForm({closeModal, isOpen}){
                     placeholder="Email"
                     onChange={handleEmailChange}
                     value={email}
+                    required
                     />
                 </label>
 
@@ -99,6 +100,7 @@ function EmailContactForm({closeModal, isOpen}){
                     onChange={handleSenderNameChange}
                     value={senderName}
                     maxLength="20"
+                    minLength="2"
                     />
                 </label>
                 <label htmlFor="message" className="modal__label">
@@ -112,6 +114,7 @@ function EmailContactForm({closeModal, isOpen}){
                         value={message}
                         maxLength="100"
                         rows="2"
+                        required
                         />
                 </label>
                 

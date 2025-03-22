@@ -15,7 +15,7 @@ const data = [
     { id: 14, name: "Full Stack", value: "90" },
     { id: 15, name: "Microservices", value: "80" },
     { id: 16, name: "Agile", value: "80" },
-    { id: 17, name: "Architecture Design", value: "70" },
+    { id: 17, name: "Architecture", value: "70" },
     { id: 18, name: "Golang", value: "50" },
     { id: 19, name: "Vue.js", value: "50" },
     { id: 20, name: "GraphQL", value: "20" },

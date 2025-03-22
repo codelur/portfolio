@@ -17,15 +17,6 @@
     transition: color 0.5s ease-in;
 }
 
-/*.skillcard:hover .skillcard__text{
-    color: rgb(0 51 89/var(--tw-text-opacity));
-}
-
-.skillcard:hover .skillcard__value{
-    --tw-text-opacity: 0.6;
-    background-color: rgb(0 51 89/var(--tw-text-opacity));
-}*/
-
 .skillcard__total{
     height: 15px;
     border-radius: 5px;

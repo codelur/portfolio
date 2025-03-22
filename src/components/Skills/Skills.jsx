@@ -36,7 +36,7 @@ function Skills(){
             <div className="skills__tools">
                 <p align="center" className="skills__icons">
                     {skillIcons.map((skill, index) => (
-                        <a key={index} href={skill.url} target="_blank" rel="noreferrer">
+                        <a data-language={skill.name}  key={index} href={skill.url} target="_blank" rel="noreferrer">
                             <img className="skills__logo" src={skill.src} alt={skill.name} width="40" height="40" />
                         </a>
                     ))}

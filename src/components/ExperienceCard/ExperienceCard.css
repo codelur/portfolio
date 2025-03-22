@@ -2,7 +2,7 @@
     margin: 20px 20%;
     position: relative;
     --tw-text-opacity: 0.5;
-    border: 2px solid  rgb(0 51 89/var(--tw-text-opacity));
+    border: 2px solid  var(--primary-color);
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease-in-out;
@@ -27,6 +27,11 @@
     font-weight: bold;
     text-decoration: underline;
     
+}
+
+li{
+    text-wrap: balance;
+    text-overflow: ellipsis;
 }
 
 .hidden {

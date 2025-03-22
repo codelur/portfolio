@@ -4,12 +4,16 @@
 }
 
 #root {
+  --primary-color: rgb(0 51 89/var(--tw-text-opacity));
+  --color-input-valid: rgba(5, 187, 5, 0.74);
+  --color-input-invalid: rgba(233, 77, 77, 0.705);
   margin: 0 auto;
   text-align: center;
   background-color: antiquewhite;
   --tw-text-opacity: 1;
-  color: rgb(0 51 89/var(--tw-text-opacity));
+  color: var(--primary-color);
   font-family: cabinetgrotesk, sans-serif;
+  
 }
 
 .logo {
