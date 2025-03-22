@@ -4,12 +4,7 @@
     
 }
 
-.title{
-    font-size: 50px;
-    
-    text-transform: uppercase;
-    font-weight: 1000;
-}
+
 
 .contact__options {
     display: flex;

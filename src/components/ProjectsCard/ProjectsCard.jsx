@@ -3,7 +3,8 @@ import "./ProjectsCard.css"
 function ProjectsCard({title, url, description, image}){
     return(
         <div className="projectscard">
-            <div className="projectscard__title"
+            <div className="projectscard__title">{title}</div>
+            <div className="projectscard__logo"
             style={{ 
                 backgroundImage:  `url(${image})`, 
                 backgroundSize: "cover",
@@ -14,7 +15,9 @@ function ProjectsCard({title, url, description, image}){
             }}>
                 
                 
+                
             </div>
+            
             <div className="projectscard__link">
                 <p className="projectscard__description">{description}</p>
                 <a href={url} target="_blank">{title}</a>

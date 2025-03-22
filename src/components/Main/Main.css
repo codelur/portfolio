@@ -12,3 +12,16 @@
     background-color: var(--primary-color);
     color: white;
 }
+
+.title{
+    font-size: 50px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    font-weight: 1000;
+}
+
+@media screen and (max-width: 500px) {
+    .title{
+        letter-spacing: 2px;
+    }
+}
