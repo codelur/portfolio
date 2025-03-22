@@ -55,3 +55,18 @@
 .footer__follow_text{
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 500px) {
+    .footer__nav{ 
+        gap: 20px;
+    }
+    .footer__follow{
+        display: none;
+    }
+    .footer__nav{ 
+        display: none;
+    }
+    .footer__developer{
+        margin-top: 12px;
+    }
+}

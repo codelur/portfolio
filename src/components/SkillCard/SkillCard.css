@@ -38,3 +38,11 @@
     padding: 16px 0;
 }
 
+@media screen and (max-width: 500px) {
+    .skillcard{
+        padding: 0 30px;
+    }
+    .skillcard__title{
+        text-align: left;
+    }
+}

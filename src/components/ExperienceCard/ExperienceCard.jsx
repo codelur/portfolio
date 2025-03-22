@@ -18,7 +18,7 @@ function ExperienceCard ({company,position, details}){
           }
         });
       },
-      { threshold: 0.6 } // Trigger when 20% of the div is visible
+      { threshold: 0.3 } // Trigger when 20% of the div is visible
     );
 
     elementsRef.current.forEach((el) => {

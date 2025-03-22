@@ -91,3 +91,22 @@
   .contact__resume-download:hover {
     transform: scale(1.5);
   }
+
+  @media screen and (max-width: 500px) {
+    .contact__options {
+        flex-direction: column;
+    }
+    .contact__email {
+        justify-content: space-between;
+    }
+    .contact__links{
+        justify-content: space-between;
+    }
+    .contact__resume-info{
+        justify-content: space-between;
+    }
+    .contact__options{
+        width: 80%;
+        margin: 0 auto;
+    }
+  }

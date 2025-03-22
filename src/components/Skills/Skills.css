@@ -18,7 +18,9 @@ hr {
   }
 
   .skills__tools{
-    
+    display: flex;
+    flex-wrap: wrap; /* Allows items to move to a new line if needed */
+    justify-content: center;
     margin: 10px 10%;
     color: black;
     padding: 5px 0;
@@ -36,13 +38,21 @@ hr {
 
   .skills__icons{
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
   }
 
   @media screen and (max-width: 500px) {
     .skills__grid-container {
-      grid-template-columns: repeat(2, 1fr); /* 3-column layout */
+      grid-template-columns: repeat(1, 1fr); /* 3-column layout */
       gap: 20px;
       padding: 20px;
+    }
+    .skills__grid-button{
+      background-color: rgb(0 51 89/var(--tw-text-opacity));
+      width: 50vw;
+      margin: 20px auto 0 auto;
     }
 }

@@ -2,8 +2,14 @@
     display: flex;
     /*grid-template-columns: repeat(2, 1fr); *//* 3-column layout */
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     padding: 40px;
     justify-content: center;  /* Centers items horizontally */
     align-items: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    .projects__grid-container {
+      flex-direction: column;
+    }
   }

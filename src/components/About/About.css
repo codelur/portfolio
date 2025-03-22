@@ -48,10 +48,20 @@
 
 @media screen and (max-width: 500px) {
     .about{
+        margin-top: 60px;
+        padding: 50px 0;
         gap: 20px;
+        flex-direction: column;
     }
-    .about:hover {
-        gap: 20px;
+    .about {
+        gap: 40px;
+    }
+    .about__developer{
+        height: 280px;
+        width: 200px;
+    }
+    .about__info{
+        width: 70%;
     }
     
 }

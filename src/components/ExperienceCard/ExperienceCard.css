@@ -43,22 +43,23 @@
 
 .experiencecard__position-text{
     text-transform: uppercase;
-}
-
-.experiencecard__position-text{
-   margin: 5px;
+    margin: 5px;
     font-weight: bold;
-}
-
-
-.experiencecard__text{
     padding: 0 16px 8px 16px;
 }
 
 ul{
-    text-align: justify;
+    text-align: left;
+    list-style: none;
+    padding: 0 12px 0 20px;
 }
 
 .experiencecard__title{
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 500px) {
+    .experiencecard{
+        margin: 20px 5%;
+    }
 }

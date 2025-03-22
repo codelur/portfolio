@@ -62,4 +62,10 @@
   .switch__inactive {
     color: black;
   }
+
+  @media screen and (max-width: 500px) {
+    .switch {
+        display: none;
+    }
+  }
   

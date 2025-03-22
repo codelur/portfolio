@@ -20,7 +20,6 @@ function Footer() {
             <a className="footer__link " href="#skills">{texts[language].skills}</a>
             <a className="footer__link " href="#experience">{texts[language].experience}</a>
             <a className="footer__link " href="#projects">{texts[language].projects}</a>
-            <a className="footer__link " href="#contact">{texts[language].contact}</a>
         </div>
         <p className="footer__developer">© {new Date().getFullYear()} Salvador Sanchez, {texts[language].engineer}</p>
       </div>
