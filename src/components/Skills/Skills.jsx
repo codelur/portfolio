@@ -63,13 +63,13 @@ function Skills(){
                 ))}
 
                 {skills.length > 8 && !showAll && (
-                    <button className="skills__grid-button" onClick={() => setShowAll(true)}>
-                        Show All ({skills.length - 8} more)
-                    </button>
+                    <a className="skills__grid-button" onClick={() => setShowAll(true)}>
+                        Show All ({skills.length - 8} more)▼
+                    </a>
                 )}
 
                 {skills.length > 8 && showAll && (
-                    <button className="skills__grid-button" onClick={() => setShowAll(false)}>Show Less</button>
+                    <a className="skills__grid-button" onClick={() => setShowAll(false)}>Show Less ▲</a>
                 )}
             </div>
             }

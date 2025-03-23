@@ -14,8 +14,6 @@ function ProjectsCard({title, url, description, image}){
                 padding: "20px"
             }}>
                 
-                
-                
             </div>
             
             <div className="projectscard__link">

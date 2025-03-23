@@ -29,6 +29,17 @@
     padding: 16px 0;
 }
 
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 @media screen and (max-width: 500px) {
     .skillcard{
         padding: 0 30px;
