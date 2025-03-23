@@ -19,13 +19,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .header__context{
     display: flex;
     flex-direction: row;
     gap: 20px;
+    text-transform: uppercase;
     
 }
 
@@ -67,11 +68,17 @@
     color: antiquewhite;
 }
 
-.header__context{
-    text-transform: uppercase;
+.header__logo-nav{
+    display: flex;
+    gap: 32px;
+    padding-left: 12px;
 }
 
+
 @media screen and (max-width: 500px) {
+    .header__context{
+        gap: 0;
+    }
     .header__link{
         margin: 0 10px;
     }
@@ -86,6 +93,7 @@
     }
     .header__menu-toggle{
         display: block;
+        align-content: center;
     }
 
     .header__nav-mobile {
@@ -106,6 +114,11 @@
         font-size: 18px;
         font-weight: bold;
         user-select: none;
+    }
+
+    .header__dev-logo{
+        width: 40px;
+        
     }
     
     .arrow {

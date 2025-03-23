@@ -6,6 +6,7 @@ import texts from '../../utils/texts';
 import LanguageContext from "../../contexts/languageContext";
 import spanish from "../../assets/spanish.png";
 import english from "../../assets/usa.jpg";
+import dev from "../../assets/dev.png";
 import ThemeToggle from "../ThemeToggle/Themetoggle";
 
 function Header({handleLanguage, changeTheme}){
@@ -23,15 +24,18 @@ function Header({handleLanguage, changeTheme}){
         <header className="header">
             <div className="header__menu">
             
-                <div className="header__nav">
-                    <a className="header__link menu-link" href="#skills">{texts[language].skills}</a>
-                    <a className="header__link menu-link" href="#experience">{texts[language].experience}</a>
-                    <a className="header__link menu-link" href="#projects">{texts[language].projects}</a>
-                    <a className="header__link menu-link" href="#contact">{texts[language].contact}</a>
+                <div className="header__logo-nav">
+                    <img src={dev} alt="" className="header__dev-logo" />
+                            
+                    <div className="header__nav">
+                        <a className="header__link menu-link" href="#skills">{texts[language].skills}</a>
+                        <a className="header__link menu-link" href="#experience">{texts[language].experience}</a>
+                        <a className="header__link menu-link" href="#projects">{texts[language].projects}</a>
+                        <a className="header__link menu-link" href="#contact">{texts[language].contact}</a>
+                    </div>
                 </div>
-
                 <div className="header__menu-toggle" onClick={toggleMenu}>
-                    SECTIONS <span className="arrow">▼</span>
+                    MENU <span className="arrow">▼</span>
                 
                 {isOpen && 
                     <div className="header__nav-mobile">

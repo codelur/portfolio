@@ -31,8 +31,6 @@
 }
 
 .about__info{
-    background-color: antiquewhite;
-    color: var(--primary-color);
     padding: 20px;
     height: fit-content;
     width: 400px;
@@ -40,6 +38,16 @@
     font-weight: bold;
     border: 10px solid white;
 
+}
+
+.about__info-light{
+    background-color: antiquewhite;
+    color: var(--primary-color);
+}
+
+.about__info-dark{
+    color: antiquewhite;
+    background-color: var(--primary-color);
 }
 
 .about__info-text{
@@ -52,6 +60,7 @@
         padding: 50px 0;
         gap: 20px;
         flex-direction: column;
+        width: 100%;
     }
     .about {
         gap: 40px;
@@ -62,6 +71,9 @@
     }
     .about__info{
         width: 70%;
+    }
+    .about:hover {
+        gap: 40px;
     }
     
 }

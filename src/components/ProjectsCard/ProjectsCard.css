@@ -1,8 +1,8 @@
 
 .projectscard{
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-evenly;
+   
     background-color: var(--primary-color);
     border: 15px solid rgb(228, 228, 238);
     border-radius: 20px;
@@ -77,6 +77,10 @@
     .projectscard{
         flex-direction: column;
         padding: 12px;
+    }
+    .projectscard:hover .projectscard__logo{
+        transform: translateX(25vw);
+    
     }
     
   }

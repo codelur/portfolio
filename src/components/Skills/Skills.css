@@ -44,7 +44,7 @@ hr {
     gap: 20px;
     
   }
-
+  @media screen and (min-width: 501px) {
   .skills__icons a::before{
     content: attr(data-language);
     position: absolute;
@@ -81,7 +81,7 @@ hr {
     opacity: 1;
   }
 
-
+  }
   @media screen and (max-width: 500px) {
     .skills{
       padding-bottom: 0;
