@@ -6,11 +6,14 @@ import LanguageContext from "../../contexts/languageContext";
 import skills from "../../utils/skills";
 import SkillCard from "../SkillCard/SkillCard";
 import skillIcons from "../../utils/skillIcons";
+import { useSelector } from "react-redux";
 
 function Skills(){
     const { language } = React.useContext(
         LanguageContext
       );
+  
+    const theme = useSelector((state) => state.theme.theme);
 
     const [showAll, setShowAll] = useState(false);
     const visibleSkills = showAll ? skills : skills.slice(0, 8);
@@ -63,13 +66,13 @@ function Skills(){
                 ))}
 
                 {skills.length > 8 && !showAll && (
-                    <a className="skills__grid-button" onClick={() => setShowAll(true)}>
+                    <a className={`skills__grid-button skills__grid-button-${theme}`} onClick={() => setShowAll(true)}>
                         Show All ({skills.length - 8} more)▼
                     </a>
                 )}
 
                 {skills.length > 8 && showAll && (
-                    <a className="skills__grid-button" onClick={() => setShowAll(false)}>Show Less ▲</a>
+                    <a className={`skills__grid-button skills__grid-button-${theme}`} onClick={() => setShowAll(false)}>Show Less ▲</a>
                 )}
             </div>
             }
